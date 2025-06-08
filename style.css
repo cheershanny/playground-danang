@@ -742,3 +742,55 @@ header {
     font-size: 16px;
   }
 }
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.event-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.event-detail-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+}
+
+.event-icon {
+  font-size: 24px;
+}
+
+.event-text {
+  font-size: 18px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .event-details {
+    gap: 10px;
+  }
+
+  .event-detail-item {
+    padding: 12px 15px;
+  }
+
+  .event-icon {
+    font-size: 20px;
+  }
+
+  .event-text {
+    font-size: 16px;
+  }
+}
