@@ -304,6 +304,15 @@ header {
   color: #2d3748;
 }
 
+/* About Section Text */
+.about-text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* Benefits Section */
 .benefits {
   display: grid;
@@ -335,6 +344,14 @@ header {
 .benefit-text {
   font-size: 18px;
   line-height: 1.6;
+}
+
+/* Benefits Section */
+.benefits-intro {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-style: italic;
 }
 
 /* About Facilitator */
@@ -440,6 +457,61 @@ header {
   color: #2d3748;
 }
 
+/* Improv Section */
+.improv-intro {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.improv-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 40px 0;
+  text-align: left;
+}
+
+.improv-comparison h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.improv-comparison h4.no {
+  color: #e53e3e;
+}
+
+.improv-comparison h4.yes {
+  color: #38a169;
+}
+
+.improv-principles-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.improv-philosophy {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 60px auto 0;
+}
+
+.improv-philosophy h4 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Registration Button */
+.registration-button {
+  font-size: 20px;
+  padding: 20px 40px;
+}
+
 /* Who Can Join */
 .requirements {
   display: grid;
@@ -508,6 +580,17 @@ header {
   z-index: 2;
 }
 
+.final-cta h4 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #ff6b6b, #feca57);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 10px rgba(255, 107, 107, 0.2);
+}
+
 .final-cta p {
   font-size: 24px;
   margin-bottom: 40px;
@@ -566,6 +649,10 @@ header {
 
   .facilitator-text p {
     margin-bottom: 20px;
+  }
+
+  .final-cta h4 {
+    font-size: 24px;
   }
 }
 
@@ -678,11 +765,10 @@ header {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   position: relative;
-  overflow: hidden;
 }
 
 .testimonial-card::before {
-  content: '"';
+  content: '\201C';
   position: absolute;
   top: 20px;
   left: 20px;
@@ -720,12 +806,6 @@ header {
   font-size: 18px;
   font-weight: 600;
   color: #2d3748;
-  margin-bottom: 5px;
-}
-
-.testimonial-info p {
-  font-size: 14px;
-  color: #718096;
 }
 
 @media (max-width: 768px) {
