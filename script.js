@@ -130,3 +130,26 @@ levelCards.forEach((card, index) => {
     
     cardObserver.observe(card);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const cards = document.querySelectorAll('.flip-card');
+  cards.forEach(card => {
+    card.addEventListener('click', function (e) {
+      // Prevent bubbling up if clicking inside the card
+      e.stopPropagation();
+      // If already flipped, unflip
+      if (card.classList.contains('flipped')) {
+        card.classList.remove('flipped');
+      } else {
+        // Unflip all cards
+        cards.forEach(c => c.classList.remove('flipped'));
+        // Flip this card
+        card.classList.add('flipped');
+      }
+    });
+  });
+  // Optional: click outside to unflip all
+  document.addEventListener('click', function () {
+    cards.forEach(c => c.classList.remove('flipped'));
+  });
+});
